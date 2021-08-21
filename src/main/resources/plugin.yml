@@ -1,0 +1,20 @@
+name: "BeautifulSkyCore"
+main: "xyz.sky_server.Main"
+version: "0.0.0"
+prefix: "BeautifulSkyCore"
+description: "Minecraftサーバーskyserver.xyzのコアプラグイン"
+api-version: 1.17
+commands:
+    hub:
+        description: "Go to HubWorld"
+        permission: beautifulskycore.hub
+permissions:
+    beautifulskycore.hub:
+        default: not op
+    beautifulskycorre.*:
+        default: op
+        children:
+            beautifulskycore.hub: true
+authors:
+    - "MaseBB"
+    - "SkyServerDevTeam"
